@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anchor Hedger — Rain Revenue Reports for Driving Ranges</title>
+<meta name="description" content="Weather changes. Your revenue doesn't have to. Anchor Hedger measures exactly how rain affects your driving range's revenue, using your own sales data, then helps you evaluate a targeted rain hedge.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%2316233F%22 stroke-width=%222%22 stroke-linecap=%22round%22><circle cx=%2212%22 cy=%224.5%22 r=%222%22/><line x1=%2212%22 y1=%226.5%22 x2=%2212%22 y2=%2219%22/><line x1=%228%22 y1=%229%22 x2=%2216%22 y2=%229%22/><path d=%22M12,20 C12,20 6,20 6,14%22/><path d=%22M12,20 C12,20 18,20 18,14%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="#top" class="brand">
+      <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="4.5" r="2"/>
+        <line x1="12" y1="6.5" x2="12" y2="19"/>
+        <line x1="8" y1="9" x2="16" y2="9"/>
+        <path d="M12,20 C12,20 6,20 6,14"/>
+        <path d="M12,20 C12,20 18,20 18,14"/>
+      </svg>
+      <span class="brand-name">Anchor Hedger</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#how">How it works</a>
+      <a href="#proof">The numbers</a>
+      <a href="faq.html">FAQ</a>
+      <a href="#contact" class="nav-cta">Start the process</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <h1>Weather changes.<span class="line-2">Your revenue doesn't have to.</span></h1>
+        <p class="hero-sub">Anchor Hedger matches your own sales data against historical rainfall to show exactly how much a rainy day costs you. If revenue volatility is significant enough from our analysis, we suggest and help you place a mathematical hedge that fits your revenue variability. Here's how that process works.</p>
+        <div class="hero-actions">
+          <a href="#how" class="btn btn-primary">See how it works &darr;</a>
+          <a href="#contact" class="btn btn-ghost">Start the process</a>
+        </div>
+        <p class="hero-fine">No obligation at any step. We'll sign an NDA first &mdash; your revenue is your business, not ours to talk about. Just historical revenue data and a business address to start.</p>
+      </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="report-card">
+          <div class="report-card-head">
+            <span class="report-tag">SAMPLE ANALYSIS</span>
+            <h3>Rain Revenue Report</h3>
+            <p class="report-sub">Cedar Ridge Driving Range &mdash; Saturdays, May&ndash;Sep</p>
+          </div>
+          <div class="report-mini">
+            <svg viewBox="0 0 480 320" role="img" aria-labelledby="heroChartTitle heroChartDesc" class="rev-chart">
+              <title id="heroChartTitle">Dry vs. rainy Saturday revenue</title>
+              <desc id="heroChartDesc">A dry Saturday averages $4,000 in revenue. A comparable rainy Saturday averages $2,500 &mdash; a loss of $1,500.</desc>
+
+              <!-- baseline -->
+              <line x1="60" y1="260" x2="440" y2="260" class="axis-line" />
+
+              <!-- gridlines -->
+              <line x1="60" y1="220" x2="440" y2="220" class="grid-line" />
+              <line x1="60" y1="180" x2="440" y2="180" class="grid-line" />
+              <line x1="60" y1="140" x2="440" y2="140" class="grid-line" />
+              <line x1="60" y1="100" x2="440" y2="100" class="grid-line" />
+              <line x1="60" y1="60"  x2="440" y2="60"  class="grid-line" />
+
+              <!-- y ticks -->
+              <text x="50" y="264" class="tick" text-anchor="end">$0</text>
+              <text x="50" y="224" class="tick" text-anchor="end">$1,000</text>
+              <text x="50" y="184" class="tick" text-anchor="end">$2,000</text>
+              <text x="50" y="144" class="tick" text-anchor="end">$3,000</text>
+              <text x="50" y="104" class="tick" text-anchor="end">$4,000</text>
+
+              <!-- Dry Saturday bar: 4000 -> height 200 (60..260) -->
+              <rect x="140" y="60" width="72" height="200" rx="4" class="bar bar-good" />
+              <text x="176" y="46" class="bar-value" text-anchor="middle">$4,000</text>
+              <text x="176" y="284" class="cat-label" text-anchor="middle">Dry Saturday</text>
+
+              <!-- Rainy Saturday bar: 2500 -> height 125 (135..260) -->
+              <rect x="268" y="135" width="72" height="125" rx="4" class="bar bar-critical" />
+              <text x="304" y="121" class="bar-value" text-anchor="middle">$2,500</text>
+              <text x="304" y="284" class="cat-label" text-anchor="middle">Rainy Saturday</text>
+
+              <!-- delta bracket -->
+              <line x1="222" y1="60" x2="258" y2="60" class="delta-line" />
+              <line x1="222" y1="135" x2="258" y2="135" class="delta-line" />
+              <line x1="240" y1="60" x2="240" y2="135" class="delta-line" />
+            </svg>
+            <p class="chart-callout"><strong>$1,500</strong> at risk on every rainy peak-season Saturday</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section">
+    <div class="wrap">
+      <h2 class="reveal">Here's the whole process</h2>
+      <p class="section-lede reveal">No 40-page report, no jargon. You send data, we do the math, you get a number. Then you decide.</p>
+      <div class="timeline">
+        <svg class="timeline-wave" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M 12.5 8 L 37.5 32 L 62.5 8 L 87.5 32" vector-effect="non-scaling-stroke" />
+        </svg>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"><span class="timeline-num">01</span></div>
+          <div class="timeline-content">
+            <h3>Send us your numbers</h3>
+            <p>We'll sign an NDA first, no exceptions &mdash; your revenue is nobody's business but yours. Then export your daily revenue, bookings, or POS transactions, a plain CSV, nothing fancy. Two or three seasons back is ideal, but we'll work with what you've got.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"><span class="timeline-num">02</span></div>
+          <div class="timeline-content">
+            <h3>We do the math</h3>
+            <p>We line up every single day you were open against the actual rainfall that day at your location. No guessing, no vibes &mdash; just your numbers next to the weather.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"><span class="timeline-num">03</span></div>
+          <div class="timeline-content">
+            <h3>We hand you the real number</h3>
+            <p>Which days actually hurt, and exactly how much rain has cost you on them. No sugarcoating, no sales pitch &mdash; just the truth about your revenue.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"><span class="timeline-num">04</span></div>
+          <div class="timeline-content">
+            <h3>If it's worth fixing, we fix it</h3>
+            <p>If the number's big enough to matter, we bring you a hedge built for those exact days and hours. If it's not, we tell you to keep your money.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IS THIS YOU / REVENUE IMPACT -->
+  <section id="proof" class="section section-alt">
+    <div class="wrap">
+      <h2 class="reveal">Rain is quietly stealing your best Saturdays</h2>
+      <p class="section-lede reveal">If you run a weather-sensitive business (driving ranges, rooftop bars, outdoor restaurants, and the like) you already know this. You just haven't put a number on it. Here's what that gap actually looks like, using real numbers from a business case study.</p>
+
+      <div class="proof-grid">
+        <div class="chart-card reveal">
+          <div class="viz-root">
+            <svg viewBox="0 0 480 320" role="img" aria-labelledby="chartTitle chartDesc" class="rev-chart">
+              <title id="chartTitle">Rainy Saturday revenue, before and after a hedge</title>
+              <desc id="chartDesc">Before a hedge, a rainy Saturday nets $2,500. After a hedge closes the gap, that same rainy Saturday nets $4,000 &mdash; matching the dry-day baseline.</desc>
+
+              <!-- baseline -->
+              <line x1="60" y1="260" x2="440" y2="260" class="axis-line" />
+
+              <!-- gridlines -->
+              <line x1="60" y1="220" x2="440" y2="220" class="grid-line" />
+              <line x1="60" y1="180" x2="440" y2="180" class="grid-line" />
+              <line x1="60" y1="140" x2="440" y2="140" class="grid-line" />
+              <line x1="60" y1="100" x2="440" y2="100" class="grid-line" />
+              <line x1="60" y1="60"  x2="440" y2="60"  class="grid-line" />
+
+              <!-- y ticks -->
+              <text x="50" y="264" class="tick" text-anchor="end">$0</text>
+              <text x="50" y="224" class="tick" text-anchor="end">$1,000</text>
+              <text x="50" y="184" class="tick" text-anchor="end">$2,000</text>
+              <text x="50" y="144" class="tick" text-anchor="end">$3,000</text>
+              <text x="50" y="104" class="tick" text-anchor="end">$4,000</text>
+
+              <!-- Before hedge bar: 2500 -> height 125 (135..260) -->
+              <rect x="140" y="135" width="72" height="125" rx="4" class="bar bar-critical" />
+              <text x="176" y="121" class="bar-value" text-anchor="middle">$2,500</text>
+              <text x="176" y="284" class="cat-label" text-anchor="middle">Before hedge</text>
+
+              <!-- After hedge bar: 4000 -> height 200 (60..260) -->
+              <rect x="268" y="60" width="72" height="200" rx="4" class="bar bar-good" />
+              <text x="304" y="46" class="bar-value" text-anchor="middle">$4,000</text>
+              <text x="304" y="284" class="cat-label" text-anchor="middle">After hedge</text>
+
+              <!-- delta bracket -->
+              <line x1="222" y1="135" x2="258" y2="135" class="delta-line" />
+              <line x1="222" y1="60" x2="258" y2="60" class="delta-line" />
+              <line x1="240" y1="135" x2="240" y2="60" class="delta-line" />
+            </svg>
+            <p class="chart-callout"><strong>$1,500</strong> gap closed &mdash; the same rainy Saturday, protected</p>
+          </div>
+        </div>
+
+        <div class="proof-copy reveal">
+          <ul class="check-list">
+            <li>You've opened the weather app before a Saturday and felt your stomach drop</li>
+            <li>A rainy weekend doesn't mean "a little slower" &mdash; it means empty bays, empty tables, real money gone</li>
+            <li>Your whole year gets carried by a handful of good-weather weekends, and one of them just got rained out</li>
+            <li>You've never actually put a dollar figure on it &mdash; it's just a gut feeling that rain is expensive</li>
+            <li>You've got sales or booking data going back a couple of seasons, which is all we need to prove it</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-cta">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <h2>Start the process</h2>
+        <p class="section-lede">Tell us a bit about your business. Here's exactly what happens next:</p>
+        <ul class="check-list">
+          <li>We sign an NDA first &mdash; your revenue numbers stay locked down, period</li>
+          <li>One of our analysts runs your numbers &mdash; completely free, no catch</li>
+          <li>We show you the real cost of rain: how much it matters, and on what days and hours</li>
+          <li>If the number's real, we'll talk hedging options. If it's not, we'll tell you that too</li>
+        </ul>
+      </div>
+      <div class="form-cell reveal">
+        <span class="report-tag">LET'S TALK</span>
+        <form id="auditForm" class="audit-form" novalidate
+              action="https://formsubmit.co/peter@anchorhedger.com" method="POST">
+          <input type="hidden" name="_subject" value="New Rain Revenue Report request">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required autocomplete="name">
+          </div>
+          <div class="form-row">
+            <label for="business">Business name</label>
+            <input id="business" name="business" type="text" required autocomplete="organization">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email">
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone <span class="optional">(optional)</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="form-row">
+            <label for="message">Anything about your rain exposure? <span class="optional">(optional)</span></label>
+            <textarea id="message" name="message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Start the process</button>
+          <p class="form-fine">Sent straight to Peter at Anchor Hedger &mdash; nothing is submitted anywhere else.</p>
+        </form>
+        <div id="formSuccess" class="form-success" hidden>
+          <p class="success-title">Request sent.</p>
+          <p>Thanks &mdash; we'll follow up within a couple of business days about sending over your data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <div>
+      <div class="brand">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="4.5" r="2"/>
+          <line x1="12" y1="6.5" x2="12" y2="19"/>
+          <line x1="8" y1="9" x2="16" y2="9"/>
+          <path d="M12,20 C12,20 6,20 6,14"/>
+          <path d="M12,20 C12,20 18,20 18,14"/>
+        </svg>
+        <span class="brand-name">Anchor Hedger</span>
+      </div>
+      <p class="footer-tagline">Weather changes. Your revenue doesn't have to.</p>
+    </div>
+    <p class="footer-note">Rain revenue reports &amp; targeted rain-hedging support &mdash; coverage placed through licensed, established providers.</p>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <a href="#contact" class="btn btn-primary btn-block">Start the process</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
