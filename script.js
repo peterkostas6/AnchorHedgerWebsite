@@ -11,8 +11,9 @@ const io = new IntersectionObserver((entries) => {
 revealEls.forEach((el) => io.observe(el));
 
 // Contact form -> FormSubmit (AJAX, falls back to a real POST if the request fails)
+// Both paths land the user on thank-you.html — AJAX success redirects there directly,
+// and the fallback real POST gets there via the form's _next field.
 const form = document.getElementById('auditForm');
-const formSuccess = document.getElementById('formSuccess');
 if (form) {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -31,8 +32,7 @@ if (form) {
         body: new FormData(form),
       });
       if (!res.ok) throw new Error('FormSubmit request failed');
-      form.hidden = true;
-      if (formSuccess) formSuccess.hidden = false;
+      window.location.href = 'thank-you.html';
     } catch (err) {
       // HTMLFormElement.submit() bypasses the 'submit' event, so this won't re-enter this handler
       form.submit();
