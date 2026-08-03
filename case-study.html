@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Study — Anchor Hedger</title>
+<meta name="description" content="How a Rain Revenue Report actually works, walked through with a patio restaurant losing money on rainy Saturdays &mdash; the rain threshold, the hedge, and what came back.">
+<link rel="canonical" href="https://anchorhedger.com/case-study.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Anchor Hedger">
+<meta property="og:url" content="https://anchorhedger.com/case-study.html">
+<meta property="og:title" content="Case Study — Anchor Hedger">
+<meta property="og:description" content="How a Rain Revenue Report actually works, walked through with a patio restaurant losing money on rainy Saturdays &mdash; the rain threshold, the hedge, and what came back.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Case Study — Anchor Hedger">
+<meta name="twitter:description" content="How a Rain Revenue Report actually works, walked through with a patio restaurant losing money on rainy Saturdays &mdash; the rain threshold, the hedge, and what came back.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%2316233F%22 stroke-width=%222%22 stroke-linecap=%22round%22><circle cx=%2212%22 cy=%224.5%22 r=%222%22/><line x1=%2212%22 y1=%226.5%22 x2=%2212%22 y2=%2219%22/><line x1=%228%22 y1=%229%22 x2=%2216%22 y2=%229%22/><path d=%22M12,20 C12,20 6,20 6,14%22/><path d=%22M12,20 C12,20 18,20 18,14%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="index.html" class="brand">
+      <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="4.5" r="2"/>
+        <line x1="12" y1="6.5" x2="12" y2="19"/>
+        <line x1="8" y1="9" x2="16" y2="9"/>
+        <path d="M12,20 C12,20 6,20 6,14"/>
+        <path d="M12,20 C12,20 18,20 18,14"/>
+      </svg>
+      <span class="brand-name">Anchor Hedger</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#proof">The numbers</a>
+      <a href="case-study.html">Case study</a>
+      <a href="faq.html">FAQ</a>
+      <a href="index.html#contact" class="nav-cta">Inquire about your business</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- CASE STUDY -->
+  <section class="section">
+    <div class="wrap" style="max-width: 800px;">
+      <span class="report-tag">CASE STUDY</span>
+      <h2 class="reveal">The rainy Saturday that finally made a restaurant owner stop guessing</h2>
+
+      <div class="legal-content reveal">
+        <p>So a family friend of mine calls me up. He owns Rooster &amp; Rye, a Southern spot in Nashville. Place isn't hurting &mdash; he wasn't calling because he was worried. He called because he knows I do this analytics stuff, and he was curious. About 140 seats, more than half of them out on the patio once summer hits. Busy on the weekends, good reviews, the whole thing. But he says something that stuck with me:</p>
+
+        <blockquote class="pull-quote">"Some Saturdays I do $31k. Some Saturdays &mdash; same reservations, same staff, same everything &mdash; I do $17k. Just because the weather sucked."</blockquote>
+
+        <p>And I said &mdash; what's that costing you a year? Silence. "I have no clue." Here's how we stopped him from losing $12,600 every time it rained.</p>
+
+        <h3>Step 1: find the actual threshold</h3>
+        <p>We signed an NDA, pulled 30 months of his daily sales, and lined up every Saturday against the real recorded rainfall at his address. Then we tested a few different cutoffs to find the exact point where revenue actually falls off a cliff:</p>
+      </div>
+
+      <ul class="check-list reveal" style="margin: 0 0 24px;">
+        <li>Under 0.1" of rain during dinner service (4&ndash;9pm): revenue barely moved</li>
+        <li>At 0.1" or more: revenue dropped hard &mdash; and stayed down, more rain past that point didn't make it much worse</li>
+        <li>So 0.1" of rain during dinner hours became his threshold &mdash; the exact line everything else gets built around</li>
+      </ul>
+
+      <div class="chart-card reveal" style="margin: 0 0 34px;">
+        <svg viewBox="0 0 480 320" role="img" aria-labelledby="csChartTitle csChartDesc" class="rev-chart">
+          <title id="csChartTitle">Rooster &amp; Rye: dry vs. rainy patio-season Saturdays</title>
+          <desc id="csChartDesc">A dry Saturday averaged $29,400. A rainy Saturday averaged $16,800 &mdash; a loss of $12,600.</desc>
+          <line x1="60" y1="260" x2="440" y2="260" class="axis-line" />
+          <line x1="60" y1="220" x2="440" y2="220" class="grid-line" />
+          <line x1="60" y1="180" x2="440" y2="180" class="grid-line" />
+          <line x1="60" y1="140" x2="440" y2="140" class="grid-line" />
+          <line x1="60" y1="100" x2="440" y2="100" class="grid-line" />
+          <line x1="60" y1="60"  x2="440" y2="60"  class="grid-line" />
+          <text x="50" y="264" class="tick" text-anchor="end">$0</text>
+          <text x="50" y="224" class="tick" text-anchor="end">$7.5k</text>
+          <text x="50" y="184" class="tick" text-anchor="end">$15k</text>
+          <text x="50" y="144" class="tick" text-anchor="end">$22.5k</text>
+          <text x="50" y="104" class="tick" text-anchor="end">$30k</text>
+          <rect x="140" y="63" width="72" height="197" rx="4" class="bar bar-good" />
+          <text x="176" y="49" class="bar-value" text-anchor="middle">$29,400</text>
+          <text x="176" y="284" class="cat-label" text-anchor="middle">Dry Saturday</text>
+          <rect x="268" y="147" width="72" height="113" rx="4" class="bar bar-critical" />
+          <text x="304" y="133" class="bar-value" text-anchor="middle">$16,800</text>
+          <text x="304" y="284" class="cat-label" text-anchor="middle">Rainy Saturday (&ge;0.1")</text>
+          <line x1="222" y1="63" x2="258" y2="63" class="delta-line" />
+          <line x1="222" y1="147" x2="258" y2="147" class="delta-line" />
+          <line x1="240" y1="63" x2="240" y2="147" class="delta-line" />
+        </svg>
+        <p class="chart-callout"><strong>$12,600</strong> gone every time that threshold gets crossed &mdash; it happened 11 times in three years, about <strong>$138,000</strong> total</p>
+      </div>
+
+      <div class="legal-content reveal">
+        <h3>Step 2: size a hedge to that exact line</h3>
+        <p>Once you know the threshold, the hedge is simple: coverage on his ~18 patio-season Saturdays, a payout that fires automatically the moment recorded rainfall at his location crosses 0.1" during dinner hours. No claims process, no adjuster &mdash; just a rain gauge.</p>
+      </div>
+
+      <div class="report-card reveal" style="margin: 0 0 34px;">
+        <div class="report-card-head">
+          <span class="report-tag">PAYOUT BREAKDOWN</span>
+          <h3>Rooster &amp; Rye &mdash; Season 1 with the hedge live</h3>
+          <p class="report-sub">18 patio-season Saturdays covered, June&ndash;September</p>
+        </div>
+        <dl class="report-rows">
+          <div class="report-row">
+            <dt>Season premium</dt>
+            <dd>$6,300</dd>
+          </div>
+          <div class="report-row">
+            <dt>Saturdays that crossed the 0.1" threshold</dt>
+            <dd>3</dd>
+          </div>
+          <div class="report-row">
+            <dt>Payout per triggered Saturday</dt>
+            <dd>$5,000</dd>
+          </div>
+          <div class="report-row report-row-good">
+            <dt>Total paid back to him</dt>
+            <dd>$15,000</dd>
+          </div>
+          <div class="report-row report-row-good">
+            <dt>Net &mdash; what he made back over premium</dt>
+            <dd>+$8,700</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="legal-content reveal">
+        <h3>Step 3: what actually happened</h3>
+        <p>Rain crossed the 0.1" threshold three times that summer. All three times, $5,000 hit his account automatically &mdash; no forms, no fighting an insurer, paid because the rain gauge said so. That's <strong>$15,000</strong> back on a <strong>$6,300</strong> premium: he made <strong>$8,700</strong> more than he spent, and it cut what those three rainy Saturdays cost him roughly in half.</p>
+
+        <p>He didn't get rich off it. That's not the point. The point is he stopped white-knuckling the weather app every Friday night, wondering if he was about to eat a $12,600 hit he had zero control over. He just knew. And on the Saturdays it didn't rain, like always, he kept every dollar.</p>
+
+        <p>That's the whole thing. It's not complicated. Most weather-exposed businesses have never once compared their own sales data to the weather, because nobody hands you that report &mdash; you just assume some weekends are unlucky and move on. We just refuse to leave it at "unlucky."</p>
+      </div>
+
+      <ul class="check-list reveal" style="margin: 28px 0 8px;">
+        <li>Weekend revenue that swings hard for no reason anyone's actually explained</li>
+        <li>A meaningful share of revenue tied to outdoor seating, bays, or activity</li>
+        <li>A couple of seasons of daily sales or booking data sitting in a POS system already</li>
+        <li>An owner willing to look at the real number instead of guessing</li>
+      </ul>
+      <p class="faq-more">
+        Sound like your place? <a href="index.html#contact">Inquire about your business</a> &mdash; same free process, your own numbers.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <div>
+      <div class="brand">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="4.5" r="2"/>
+          <line x1="12" y1="6.5" x2="12" y2="19"/>
+          <line x1="8" y1="9" x2="16" y2="9"/>
+          <path d="M12,20 C12,20 6,20 6,14"/>
+          <path d="M12,20 C12,20 18,20 18,14"/>
+        </svg>
+        <span class="brand-name">Anchor Hedger</span>
+      </div>
+      <p class="footer-tagline">Weather changes. Your revenue doesn't have to.</p>
+    </div>
+    <p class="footer-note">Rain revenue reports &amp; targeted rain-hedging support for weather-exposed businesses.<br><a href="privacy.html" style="color:inherit;">Privacy Policy</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

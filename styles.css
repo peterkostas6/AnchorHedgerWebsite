@@ -200,6 +200,7 @@ h1 .line-2{
 .report-row dt{ font-size: 14px; color: var(--ink-secondary); }
 .report-row dd{ margin:0; font-size: 15.5px; font-weight: 600; font-variant-numeric: tabular-nums; }
 .report-row-risk dt, .report-row-risk dd{ color: var(--critical); font-weight: 700; }
+.report-row-good dt, .report-row-good dd{ color: var(--green-deep); font-weight: 700; }
 .report-mini{ padding: 18px 24px 22px; background: var(--surface-alt); }
 .report-mini svg{ width:100%; height:auto; }
 
@@ -528,6 +529,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .legal-content li{ margin: 0 0 8px; }
 .legal-content a{ color: var(--navy); font-weight: 600; }
+.pull-quote{
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 21px;
+  color: var(--ink);
+  border-left: 3px solid var(--navy);
+  padding: 2px 0 2px 20px;
+  margin: 28px 0;
+  max-width: 60ch;
+}
 
 @media (prefers-reduced-motion: reduce){
   html{ scroll-behavior:auto; }
