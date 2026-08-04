@@ -14,7 +14,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Anchor Hedger — Rain Revenue Reports for Weather-Exposed Businesses">
 <meta name="twitter:description" content="Weather changes. Your revenue doesn't have to. Anchor Hedger measures exactly how rain affects your business's revenue, using your own sales data, then helps you evaluate a targeted rain hedge.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%2316233F%22 stroke-width=%222%22 stroke-linecap=%22round%22><circle cx=%2212%22 cy=%224.5%22 r=%222%22/><line x1=%2212%22 y1=%226.5%22 x2=%2212%22 y2=%2219%22/><line x1=%228%22 y1=%229%22 x2=%2216%22 y2=%229%22/><path d=%22M12,20 C12,20 6,20 6,14%22/><path d=%22M12,20 C12,20 18,20 18,14%22/></svg>">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -73,13 +74,7 @@ src="https://www.facebook.com/tr?id=1519957996126238&ev=PageView&noscript=1"
 <header class="site-header">
   <div class="wrap header-row">
     <a href="#top" class="brand">
-      <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-        <circle cx="12" cy="4.5" r="2"/>
-        <line x1="12" y1="6.5" x2="12" y2="19"/>
-        <line x1="8" y1="9" x2="16" y2="9"/>
-        <path d="M12,20 C12,20 6,20 6,14"/>
-        <path d="M12,20 C12,20 18,20 18,14"/>
-      </svg>
+      <img class="brand-icon" src="assets/logo.png" alt="Anchor Hedger logo">
       <span class="brand-name">Anchor Hedger</span>
     </a>
     <nav class="site-nav">
@@ -96,17 +91,23 @@ src="https://www.facebook.com/tr?id=1519957996126238&ev=PageView&noscript=1"
 
   <!-- HERO -->
   <section class="hero">
-    <div class="wrap hero-grid">
+    <div class="wrap hero-stack">
       <div class="hero-copy reveal">
-        <h1>Weather changes.<span class="line-2">Your revenue doesn't have to.</span></h1>
-        <p class="hero-sub">Anchor Hedger matches your own sales data against historical rainfall to show exactly how much a rainy day costs you. If revenue volatility is significant enough from our analysis, we suggest and help you place a mathematical hedge that fits your revenue variability. Here's how that process works.</p>
+        <h1>Weather changes.<span class="line-2"><img class="h1-icon" src="assets/logo.png" alt=""> Your revenue doesn't have to.</span></h1>
+        <p class="hero-sub">If rain wrecks one of your busy days, you lose real money. We show you exactly how much &mdash; using your own numbers &mdash; then help you get it back.</p>
         <div class="hero-actions">
           <a href="#how" class="btn btn-primary">See how it works &darr;</a>
           <a href="#contact" class="btn btn-ghost">Inquire about your business</a>
         </div>
-        <p class="hero-fine">No obligation at any step. We'll sign an NDA first &mdash; your revenue is your business, not ours to talk about. Just historical revenue data and a business address to start.</p>
+        <p class="hero-fine">No obligation, ever. We sign an NDA first &mdash; then all we need is your revenue history and a business address.</p>
       </div>
-      <div class="hero-visual reveal" aria-hidden="true">
+    </div>
+  </section>
+
+  <!-- LOSS ESTIMATE + QUICK OVERVIEW -->
+  <section class="section section-dark">
+    <div class="wrap loss-grid">
+      <div class="loss-visual reveal" aria-hidden="true">
         <div class="report-card">
           <div class="report-card-head">
             <span class="report-tag">SAMPLE ANALYSIS</span>
@@ -154,6 +155,42 @@ src="https://www.facebook.com/tr?id=1519957996126238&ev=PageView&noscript=1"
           </div>
         </div>
       </div>
+
+      <div class="loss-list reveal">
+        <div class="loss-item">
+          <div class="loss-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="19" x2="5" y2="11"/>
+              <line x1="12" y1="19" x2="12" y2="6"/>
+              <line x1="19" y1="19" x2="19" y2="14"/>
+            </svg>
+          </div>
+          <h3>How it works</h3>
+          <p>We match your sales data to rainfall history and show you exactly what rain costs you. If the number's real, we help you hedge it.</p>
+          <a href="#how" class="loss-link">See how it works &rsaquo;</a>
+        </div>
+        <div class="loss-item">
+          <div class="loss-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12z"/>
+              <circle cx="12" cy="9" r="2.3"/>
+            </svg>
+          </div>
+          <h3>Businesses we cover</h3>
+          <p>Driving ranges, rooftop bars, outdoor restaurants &mdash; any weather-exposed business with a couple seasons of sales data.</p>
+          <a href="case-study.html" class="loss-link">See a real example &rsaquo;</a>
+        </div>
+        <div class="loss-item">
+          <div class="loss-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 5h16v11H8l-4 4V5z"/>
+            </svg>
+          </div>
+          <h3>Help &amp; support</h3>
+          <p>Questions about the process, your report, or what counts as qualifying rain?</p>
+          <a href="faq.html" class="loss-link">Visit the FAQ &rsaquo;</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -161,7 +198,7 @@ src="https://www.facebook.com/tr?id=1519957996126238&ev=PageView&noscript=1"
   <section id="how" class="section">
     <div class="wrap">
       <h2 class="reveal">Here's the whole process</h2>
-      <p class="section-lede reveal">No 40-page report, no jargon. You send data, we do the math, you get a number. Then you decide.</p>
+      <p class="section-lede reveal">If rain costs you money on your busiest days, we help you get it back. Four steps, no jargon.</p>
       <div class="timeline">
         <svg class="timeline-wave" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true">
           <path d="M 12.5 8 L 37.5 32 L 62.5 8 L 87.5 32" vector-effect="non-scaling-stroke" />
@@ -170,28 +207,28 @@ src="https://www.facebook.com/tr?id=1519957996126238&ev=PageView&noscript=1"
           <div class="timeline-marker"><span class="timeline-num">01</span></div>
           <div class="timeline-content">
             <h3>Send us your numbers</h3>
-            <p>We'll sign an NDA first, no exceptions &mdash; your revenue is nobody's business but yours. Then export your daily revenue, bookings, or POS transactions, a plain CSV, nothing fancy. Two or three seasons back is ideal, but we'll work with what you've got.</p>
+            <p>We sign an NDA, then you send your daily revenue or bookings &mdash; a plain CSV.</p>
           </div>
         </div>
         <div class="timeline-item reveal">
           <div class="timeline-marker"><span class="timeline-num">02</span></div>
           <div class="timeline-content">
             <h3>We do the math</h3>
-            <p>We line up every single day you were open against the actual rainfall that day at your location. No guessing, no vibes &mdash; just your numbers next to the weather.</p>
+            <p>We compare every day you were open to the actual rainfall that day.</p>
           </div>
         </div>
         <div class="timeline-item reveal">
           <div class="timeline-marker"><span class="timeline-num">03</span></div>
           <div class="timeline-content">
-            <h3>We hand you the real number</h3>
-            <p>Which days actually hurt, and exactly how much rain has cost you on them. No sugarcoating, no sales pitch &mdash; just the truth about your revenue.</p>
+            <h3>We show you the real number</h3>
+            <p>Exactly which days rain hurts you, and how much it's costing you.</p>
           </div>
         </div>
         <div class="timeline-item reveal">
           <div class="timeline-marker"><span class="timeline-num">04</span></div>
           <div class="timeline-content">
-            <h3>If it's worth fixing, we fix it</h3>
-            <p>If the number's big enough to matter, we bring you a hedge built for those exact days and hours. If it's not, we tell you to keep your money.</p>
+            <h3>You get paid back when it rains</h3>
+            <p>If the number's worth it, we pay you back directly on qualifying rainy days. If it's not, we tell you to keep your money.</p>
           </div>
         </div>
       </div>
@@ -202,7 +239,7 @@ src="https://www.facebook.com/tr?id=1519957996126238&ev=PageView&noscript=1"
   <section id="proof" class="section section-alt">
     <div class="wrap">
       <h2 class="reveal">Rain is quietly stealing your best Saturdays</h2>
-      <p class="section-lede reveal">If you run a weather-sensitive business (driving ranges, rooftop bars, outdoor restaurants, and the like) you already know this. You just haven't put a number on it. Here's what that gap actually looks like, using real numbers from a business case study.</p>
+      <p class="section-lede reveal">If you run a driving range, rooftop bar, or outdoor restaurant, you already feel this. You just haven't put a number on it. Here's a real example.</p>
 
       <div class="proof-grid">
         <div class="chart-card reveal">
@@ -315,13 +352,7 @@ src="https://www.facebook.com/tr?id=1519957996126238&ev=PageView&noscript=1"
   <div class="wrap footer-row">
     <div>
       <div class="brand">
-        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-          <circle cx="12" cy="4.5" r="2"/>
-          <line x1="12" y1="6.5" x2="12" y2="19"/>
-          <line x1="8" y1="9" x2="16" y2="9"/>
-          <path d="M12,20 C12,20 6,20 6,14"/>
-          <path d="M12,20 C12,20 18,20 18,14"/>
-        </svg>
+        <img class="brand-icon" src="assets/logo-light.png" alt="Anchor Hedger logo">
         <span class="brand-name">Anchor Hedger</span>
       </div>
       <p class="footer-tagline">Weather changes. Your revenue doesn't have to.</p>
