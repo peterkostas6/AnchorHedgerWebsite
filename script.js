@@ -24,6 +24,11 @@ if (form) {
     const business = form.business.value.trim();
     form._subject.value = `New Rain Revenue Report request — ${business}`;
 
+    // Shared conversion ID so the Reddit Pixel event (fired on thank-you.html)
+    // and the future Conversions API call can be deduplicated as one conversion.
+    const conversionId = crypto.randomUUID();
+    form._next.value = `https://anchorhedger.com/thank-you.html?cid=${conversionId}`;
+
     try {
       const endpoint = form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/');
       const res = await fetch(endpoint, {
@@ -32,7 +37,7 @@ if (form) {
         body: new FormData(form),
       });
       if (!res.ok) throw new Error('FormSubmit request failed');
-      window.location.href = 'thank-you.html';
+      window.location.href = `thank-you.html?cid=${conversionId}`;
     } catch (err) {
       // HTMLFormElement.submit() bypasses the 'submit' event, so this won't re-enter this handler
       form.submit();
