@@ -25,9 +25,32 @@ if (form) {
     form._subject.value = `New Rain Revenue Report request — ${business}`;
 
     // Shared conversion ID so the Reddit Pixel event (fired on thank-you.html)
-    // and the future Conversions API call can be deduplicated as one conversion.
+    // and this Conversions API call get deduplicated as one conversion by Reddit.
     const conversionId = crypto.randomUUID();
     form._next.value = `https://anchorhedger.com/thank-you.html?cid=${conversionId}`;
+
+    // Server-side Reddit conversion event, fired here (not on thank-you.html) so we
+    // have the actual submitted email/phone as match keys without putting PII in the URL.
+    const capiPayload = JSON.stringify({
+      conversionId,
+      email: form.email.value,
+      phone: form.phone.value,
+      screenWidth: window.screen.width,
+      screenHeight: window.screen.height,
+    });
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon(
+        '/.netlify/functions/reddit-capi',
+        new Blob([capiPayload], { type: 'application/json' })
+      );
+    } else {
+      fetch('/.netlify/functions/reddit-capi', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: capiPayload,
+        keepalive: true,
+      }).catch(() => {});
+    }
 
     try {
       const endpoint = form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/');
