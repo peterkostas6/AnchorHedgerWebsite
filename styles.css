@@ -454,8 +454,8 @@ h1 .line-2{
 .story-toast-b{ border-left-color: var(--green-deep); }
 .story-toast-icon{ width:26px; height:26px; flex-shrink:0; fill:none; stroke: var(--story-sun-core); stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
 .story-toast-icon-good{ stroke: var(--green-deep); }
-#storyAnim[data-stage="trigger"] .story-toast-a{ animation: story-toast-a-seq 5.34s ease-in-out both; }
-#storyAnim[data-stage="trigger"] .story-toast-b{ animation: story-toast-b-seq 5.34s ease-in-out both; }
+#storyAnim[data-stage="trigger"] .story-toast-a{ animation: story-toast-a-seq 3.76s ease-in-out both; }
+#storyAnim[data-stage="trigger"] .story-toast-b{ animation: story-toast-b-seq 3.76s ease-in-out both; }
 @keyframes story-toast-a-seq{
   0%{ opacity:0; transform: translateY(6px); }
   10%{ opacity:1; transform: translateY(0); }

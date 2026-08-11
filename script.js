@@ -83,14 +83,14 @@ if (form) {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   const stages = [
-    { key: 'forecast', duration: 2440, dot: 0, caption: "Bad weather doesn't just change the <em>forecast</em>." },
-    { key: 'wipeout', duration: 4760, dot: 0, caption: 'For weather-sensitive businesses, it can <em>wipe out</em> one of the busiest days of the month.' },
-    { key: 'protect', duration: 4880, dot: 1, caption: 'Anchor Hedger helps businesses <em>protect their revenue</em> before the rain begins.' },
-    { key: 'analyze', duration: 3020, dot: 2, caption: "We'll help analyze the dates and operating hours that matter most." },
-    { key: 'threshold', duration: 2760, dot: 2, caption: 'Then establish a <em>rainfall threshold</em> and a predetermined payout.' },
-    { key: 'trigger', duration: 5340, dot: 2, caption: 'When rainfall occurs, the weather hedge is <em>triggered</em> — helping offset the financial impact of a rainy day.' },
-    { key: 'steady', duration: 2080, dot: 3, caption: "Because unpredictable weather shouldn't mean <em>unpredictable revenue</em>." },
-    { key: 'tagline', duration: 1080, dot: 3, caption: '<em>Anchor Hedger</em> — Protect your revenue from rain.' },
+    { key: 'forecast', duration: 2260, dot: 0, caption: "Bad weather doesn't just change the <em>forecast</em>." },
+    { key: 'wipeout', duration: 4720, dot: 0, caption: 'For weather-sensitive businesses, it can <em>wipe out</em> one of the busiest days of the month.' },
+    { key: 'protect', duration: 5440, dot: 1, caption: 'Anchor Hedger helps businesses <em>protect their revenue</em> before the rain begins.' },
+    { key: 'analyze', duration: 4400, dot: 2, caption: "We'll help analyze the dates and operating hours that matter most." },
+    { key: 'threshold', duration: 4320, dot: 2, caption: 'Then establish a <em>rainfall threshold</em> and a predetermined payout.' },
+    { key: 'trigger', duration: 3760, dot: 2, caption: 'When rainfall occurs, the weather hedge is <em>triggered</em> — helping offset the financial impact of a rainy day.' },
+    { key: 'steady', duration: 3380, dot: 3, caption: "Because unpredictable weather shouldn't mean <em>unpredictable revenue</em>." },
+    { key: 'tagline', duration: 3670, dot: 3, caption: '<em>Anchor Hedger</em> — Protect your revenue from rain.' },
   ];
 
   function setDot(i) {
